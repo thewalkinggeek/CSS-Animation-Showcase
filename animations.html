@@ -3,8 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="A showcase of dozens of CSS-only animation effects, including entrance, exit, hover, and text animations, complete with customizable controls and copy-paste code snippets.">
   <title>CSS Animation Effects Showcase</title>
+  <meta name="description" content="A showcase of CSS-only animation effects, including entrance, exit, hover, and text animations, with customizable controls and copy-paste code snippets.">
+  <link rel="canonical" href="https://www.techcentric.cc/animations.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.techcentric.cc/animations.html">
+  <meta property="og:title" content="CSS Animation Effects Showcase">
+  <meta property="og:description" content="A showcase of CSS-only animation effects, including entrance, exit, hover, and text animations, with customizable controls and copy-paste code snippets.">
+  <meta property="og:image" content="https://www.techcentric.cc/assets/css-animations-og-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.techcentric.cc/animations.html">
+  <meta property="twitter:title" content="CSS Animation Effects Showcase">
+  <meta property="twitter:description" content="A showcase of CSS-only animation effects, including entrance, exit, hover, and text animations, with customizable controls and copy-paste code snippets.">
+  <meta property="twitter:image" content="https://www.techcentric.cc/assets/css-animations-og-image.png">
+
   <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -46,18 +62,19 @@
       --anim-color-to: blue;
       --dynamic-anim-duration: 1s;
 
-      --prism-comment: slategray;
-      --prism-punctuation: #888;
-      --prism-tag: #905;
-      --prism-attr-name: #690;
-      --prism-attr-value: #07a;
-      --prism-string: #07a;
-      --prism-keyword: #07a;
-      --prism-function: #DD4A68;
-      --prism-selector: #690;
-      --prism-property: #905;
-      --prism-operator: #9a6e3a;
-      --prism-important-variable: #e90;
+      /* ACCESSIBILITY FIX: WCAG AA compliant high-contrast PrismJS theme for light mode */
+      --prism-comment: #5c6370;
+      --prism-punctuation: #383a42;
+      --prism-tag: #ca1243;
+      --prism-attr-name: #994500;
+      --prism-attr-value: #005cc5;
+      --prism-string: #032f62;
+      --prism-keyword: #a626a4;
+      --prism-function: #4078f2;
+      --prism-selector: #005a20;
+      --prism-property: #005cc5;
+      --prism-operator: #c18401;
+      --prism-important-variable: #b06800;
     }
 
     body.dark-mode {
@@ -82,10 +99,10 @@
       --toggle-btn-bg: #343a40;
       --toggle-btn-border: #495057;
       --toggle-btn-hover-bg: #495057;
-      --guide-bg: #2c3e50;
-      --guide-border: #3f556a;
-      --guide-code-bg: #34495e;
-      --footer-text-color: #adb5bd;
+      --guide-bg: #2a3947;
+      --guide-border: #4a5c6e;
+      --guide-code-bg: #2f4f4f;
+      --footer-text-color: #bdc3c7;
       --input-bg: #343a40;
       --input-border: #495057;
       --input-color-bg: #444;
@@ -102,7 +119,7 @@
       --prism-string: #98c379;
       --prism-keyword: #c678dd;
       --prism-function: #61afef;
-      --prism-selector: #e06c75;
+      --prism-selector: #d19a66;
       --prism-property: #d19a66;
       --prism-operator: #56b6c2;
       --prism-important-variable: #e5c07b;
@@ -199,9 +216,7 @@
     #theme-toggle i, #view-toggle i {
         margin-right: 6px;
     }
-    .button-text-desktop {
-        /* Visible by default */
-    }
+
     #theme-toggle:hover, #view-toggle:hover {
       background-color: var(--toggle-btn-hover-bg);
     }
@@ -1849,7 +1864,7 @@
       </div>
 
       <div class="demo-section" data-animation-group="textSlideFocus">
-        <h2>Text: Slide & Focus In</h2>
+        <h2>Text: Slide &amp; Focus In</h2>
          <div class="controls-container">
             <label for="textSlideFocusDuration">Duration:</label>
             <input type="range" id="textSlideFocusDuration" data-control-type="duration" min="0.1" max="3" step="0.1" value="1">
@@ -1908,7 +1923,7 @@
 }"></code></pre></div>
         </div>
       </div>
-
+      
       <div class="demo-section" data-animation-group="textFocusIn">
         <h2>Text: Focus In</h2>
         <div class="controls-container">
@@ -2142,6 +2157,15 @@
     &copy; 2025 Jonathan Schoenberger
   </footer>
 
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "CSS Animation Effects Showcase",
+      "description": "A showcase of CSS-only animation effects, including entrance, exit, hover, and text animations, with customizable controls and copy-paste code snippets.",
+      "url": "https://www.techcentric.cc/animations.html"
+    }
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {

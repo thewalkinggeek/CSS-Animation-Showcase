@@ -64,5 +64,3 @@ This applies the keyframes to your target element.
 **Jonathan Schoenberger** is a technology specialist with 30 years of IT experience, specializing in bridging the gap between complex technology and practical user solutions.
 
 ---
-
-*© 2026 Jonathan Schoenberger | Licensed under MIT.*
